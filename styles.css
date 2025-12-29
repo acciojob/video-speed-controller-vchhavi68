@@ -1,2 +1,99 @@
 
 /* Your CSS Code here. */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* Video player container */
+.wrapper {
+  max-width: 765px;
+  background: #222;
+  padding: 10px;
+  color: white;
+  border-radius: 8px;
+}
+
+/* Video element */
+video {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Controls container */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #333;
+  padding: 10px;
+  gap: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Buttons for play/pause and skip */
+.player__button,
+button[data-skip] {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.player__button:hover,
+button[data-skip]:hover {
+  background: #555;
+}
+
+/* Volume and playback speed sliders */
+input[type="range"] {
+  cursor: pointer;
+}
+
+/* Progress bar container */
+.progress {
+  flex: 1;
+  height: 8px;
+  background: #555;
+  cursor: pointer;
+  position: relative;
+  border-radius: 4px;
+  margin: 0 5px;
+}
+
+/* Filled portion of progress bar */
+.progress__filled {
+  width: 0%;
+  height: 100%;
+  background: #ffc600;
+  transition: width 0.1s linear;
+}
+
+/* Speed scrubber */
+.speed {
+  height: 20px;
+  background: #444;
+  margin-top: 10px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+}
+
+.speed-bar {
+  height: 100%;
+  width: 50%;
+  background: #ffc600;
+  text-align: center;
+  line-height: 20px;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px 0 0 5px;
+}
