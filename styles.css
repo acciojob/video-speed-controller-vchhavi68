@@ -37,7 +37,7 @@ video {
 }
 
 /* Buttons for play/pause and skip */
-.player__button,
+.player__button.toggle,
 button[data-skip] {
   background: none;
   border: none;
@@ -47,7 +47,6 @@ button[data-skip] {
   padding: 5px 10px;
   border-radius: 3px;
 }
-
 .player__button:hover,
 button[data-skip]:hover {
   background: #555;
